@@ -10,9 +10,9 @@
 
 ```
 ├── admin/          # Django 後端（管理、產品）
+│   └── products/   # 產品 app
 ├── main/           # Flask 後端（主服務）
 │   └── migrations/ # Alembic 資料庫遷移
-├── architecture.py # 架構圖產生腳本
 └── assets/         # 架構圖等靜態資源
 ```
 
@@ -40,3 +40,9 @@ docker-compose up -d
 cd main
 docker-compose up -d
 ```
+
+## 參考資料
+
+這是根據以下教學影片學習與練習的程式碼記錄：
+
+- [Python Microservices Tutorial](https://www.youtube.com/watch?v=ddrucr_aAzA)

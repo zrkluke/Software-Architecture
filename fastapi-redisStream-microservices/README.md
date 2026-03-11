@@ -31,6 +31,7 @@
 
 ```bash
 cd inventory
+pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 # 另開終端執行 consumer
 python consumer.py
@@ -40,6 +41,7 @@ python consumer.py
 
 ```bash
 cd payment
+pip install -r requirements.txt
 uvicorn main:app --reload --port 8001
 # 另開終端執行 consumer
 python consumer.py
@@ -52,3 +54,9 @@ cd inventory-frontend
 npm install
 npm start
 ```
+
+## 參考資料
+
+這是根據網路課程學習與練習的程式碼記錄，參考自以下教學：
+
+- [FastAPI Redis Stream 微服務教學](https://www.youtube.com/watch?v=Cy9fAvsXGZA)
